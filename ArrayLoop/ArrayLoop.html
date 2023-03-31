@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+		
+		var fruit = ["apple", "banana", "orange", "pear"];
+
+		for (var i = 0; i < fruit.length; i++) {
+			console.log(fruit[i]);
+		}
+
+        var colors = ["red", "green", "blue", "yellow", "purple"];
+
+        for (var color of colors) {
+        console.log(color);
+        }
+
+        var num = [2, 5, 7, 1, 9]
+
+        function sumArray(array) 
+        {
+        var sum = 0;
+        for (var i = 0; i < array.length; i++) 
+        {
+            sum += array[i];
+        }
+        return sum;
+        }
+
+        var sumOfNumbers = sumArray(num);
+
+        console.log(sumOfNumbers);
+
+        function multArray(array) 
+        {
+        var summary = [];
+        for (var i = 0; i < array.length; i++) 
+        {
+            summary.push(array[i] * 2);
+        }
+        return summary;
+        }
+
+        var multOfNumbers = multArray(num);
+
+        console.log(multOfNumbers);
+	</script>
+
+</body>
+</html>
